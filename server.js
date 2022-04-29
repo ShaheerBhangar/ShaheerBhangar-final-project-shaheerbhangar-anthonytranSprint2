@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded());
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
-// use res.render to load up an ejs vi'ew file
+// use res.render to load up an ejs view file
 
 // login page 
 app.get('/', function(req, res) {
