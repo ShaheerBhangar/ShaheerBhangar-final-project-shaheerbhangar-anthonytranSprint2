@@ -2,36 +2,34 @@
 <html lang="en">
 <head>
     <%- include('../partials/head'); %>
-
-    <style>
-        p.round3 {
-          border: 2px solid red;
-          border-radius: 12px;
-          padding: 5px;
-        }
-        p.round2 {
-          border: 2px solid blue;
-          border-radius: 8px;
-          padding: 5px;
-        }
-        </style>
-
 </head>
 <body class="container">
 
-    <header>
-        <%- include('../partials/header'); %>
-    </header>
+<header>
+    <%- include('../partials/header'); %>
+</header>
 
-    <main>
-        <!-- print thank you message-->
-        <h6> Successfully Logged In.</h6>
+<main>
+<div class="row">
+    <div class="col-sm-8">
+        <div class="jumbotron">
+            
+            <div class="input-group mb-3">
+                <a href="http://127.0.0.1:8080/thanks">
+                    <button type="button" class="btn btn-primary btn-rounded">Click to view current trips</button>
+                </a>
+            </div>
+            
+        </div>
+    </div>
 
-    </main>
 
-    <footer>
-        <%- include('../partials/footer'); %>
-    </footer>
+</div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
 
 </body>
 </html>
