@@ -39,6 +39,29 @@ app.post('/process_form', function(req, res){
 
   })
 
+app.get('/thanks', function(req, res) {
+    
+    axios.get(`http://127.0.0.1:5000/api/trip/all`)
+    .then((response)=>{
+        
+        var cars = response.data;
+        var tagline = "Currently planned trips:";
+        console.log(cars);
+         // use res.render to load up an ejs view file
+        res.render('pages/about.ejs', {
+            cars: cars,
+            tagline: tagline
+        });
+    });
+
+
+});
+
+app.get('/choose', function(req, res) {
+    
+    // this will render our new example spage 
+    res.render("pages/choose.ejs");
+});
 
 app.listen(8080);
 console.log('8080 is the magic port');
