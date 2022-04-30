@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <form action="/store" method="post">
+        <div class="jumbotron" style="background-color:#E0E0E0">
+            <p><%= locals.tagline %></p>
+            <ul>
+                <% if (locals.cars) { %>
+
+                    <% locals.cars.forEach(function(car) { %>
+                        <li>
+                            <strong><%= car.tripname %></strong>
+                            <br>
+                            Start date: <%= car.startdate %>
+                            <br> 
+                            End date: <%= car.enddate %>
+                            <br>
+                            Transportation method: <%= car.transportation %>
+                        </li>
+                    <% }); %>
+                   
+                <% } %>
+                
+            </ul>
+            <button type="nav-item" class="btn btn-primary btn-rounded">
+                <a class="nav-link" href="/choose" style="color:white">Update trip</a>
+            </button>
+        </div>
+
+</div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
