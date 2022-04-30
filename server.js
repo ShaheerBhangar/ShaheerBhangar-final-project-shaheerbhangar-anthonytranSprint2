@@ -7,7 +7,7 @@ const bodyParser  = require('body-parser');
 const axios = require('axios');
 
 var selectedID = "";
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true}));
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
