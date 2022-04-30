@@ -29,7 +29,7 @@ app.post('/process_form', function(req, res){
 
     let alert = require('alert');
 
-  if (username === "admin" && password === "admin123"){
+  if (username === "shaheer" && password === "shaheer123"){
     res.render('pages/thanks.ejs', {body: req.body})
   }
   else {

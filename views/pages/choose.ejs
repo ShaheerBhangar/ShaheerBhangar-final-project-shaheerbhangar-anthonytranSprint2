@@ -10,7 +10,7 @@
     </header>
 
     <main>
-        <form action="/store" method="post">
+        <form action="/choose" method="post">
             <div class="jumbotron" style="background-color:#E0E0E0">
                 <h2 style="text-align: center;">Update trips and destination!</h2>
             </div>  
@@ -50,7 +50,7 @@
                         </div>
                         <br>
                         <div class="input-group mb-3">
-                            <button type="submit" class="btn btn-primary btn-rounded">Submit</button>
+                            <button type="reset" class="btn btn-primary btn-rounded">Submit</button>
                             <% if (locals.converted) { %>
                                 <span class="input-group-text" style="background-color:white">
                                     <%= converted %>
@@ -67,42 +67,42 @@
             <div class="col-sm-8">
                     <div class="input-group">
                         <span class="input-group-text">Trip name:</span>
-                        <input type="text" aria-label="Convert from:" id="from" name="from" class="form-control" placeholder="Trip name" required
+                        <input type="text" aria-label="Convert from:" id="from" name="from" class="form-control" placeholder="Trip name" 
                             autofocus>
                     </div>
                     <br>
                     <div class="input-group">
                         <span class="input-group-text">Destination:</span>
-                        <input type="text" aria-label="Convert to:" id="to" name="to" class="form-control" placeholder="Destination" required
+                        <input type="text" aria-label="Convert to:" id="to" name="to" class="form-control" placeholder="Destination" 
                         autofocus>                  
                     </div>
                     <br>
                     <div class="input-group">
                         <span class="input-group-text">Start date:</span>
-                        <input type="text" aria-label="Amount:" id="start" name="start" class="form-control" placeholder="Start date" required
+                        <input type="text" aria-label="Amount:" id="start" name="start" class="form-control" placeholder="Start date" 
                         autofocus>                  
                     </div>
                     <br>
                     <div class="input-group">
                         <span class="input-group-text">End date:</span>
-                        <input type="text" aria-label="Amount:" id="end" name="end" class="form-control" placeholder="End date" required
+                        <input type="text" aria-label="Amount:" id="end" name="end" class="form-control" placeholder="End date" 
                         autofocus>                  
                     </div>
                     <br>
                     <div class="input-group">
                         <span class="input-group-text">Transportation method:</span>
-                        <input type="text" aria-label="Amount:" id="trans" name="trans" class="form-control" placeholder="Transportation" required
+                        <input type="text" aria-label="Amount:" id="trans" name="trans" class="form-control" placeholder="Transportation" 
                         autofocus>                  
                     </div>
                     <br>
                     <div class="input-group mb-3">
-                        <button type="submit" class="btn btn-primary btn-rounded">Submit</button>
+                        <button type="reset" class="btn btn-primary btn-rounded">Submit</button>
                         <% if (locals.converted) { %>
                             <span class="input-group-text" style="background-color:white">
                                 <%= converted %>
                             </span>
                         <% } %>
-                        <button type="submit" class="btn btn-primary btn-rounded">Delete</button>
+                        <button type="reset" class="btn btn-primary btn-rounded">Delete</button>
                     </div>
                 
             </div>
